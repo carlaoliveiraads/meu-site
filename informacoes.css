@@ -1,0 +1,113 @@
+/* Aqui é só para colocar as informações*/
+
+font-size : é tamanho
+font-weigt: é o estilo ex: negrito (bold)
+font-family : é o nome da familia de fontes.
+
+text-align :  é o alinhamento do texto  , temos right , center , justfy, left.
+
+tex-decoration : decoração do texto que pode ser: 
+none ( para retirar a decoração do texto)
+line-through ( para riscar)
+overline ( risca a cima da palavra)
+
+text-transform : uppercase ( deixa as letras em caixa alta)
+                 lowercase ( deixa todas as letras em miníscula)
+letter-spacing: espaçamento entre uma letra e outra
+word-spacign: espaçamento entre uma palavra e outra 
+line-height: determina a altura da linha 
+text-shadow: (sombra no texto) existem quarto itens
+0 px , 0px ,0 px cor ( distancia da sombra para a direita, distancia da letra para baixo, e espaço de esfumaçamento, cor )
+
+/* Adicionando fontes externas */
+
+- Google fontes; 
+_ Pesquisa a fonte desejada;
+
+- Escolhe a fonte e aperta no (+) ( a fotonte será selecionada)
+- Clica na aba que está aparecendo em baixo  onde vai abrir uma tela onde existe um código copia o link e coloca no html. ( Antes pode ser customizado)
+- Coloca o link no html no head , logo abaixo do link de css.
+- No css ao colocar a font-family ela deve ser usada entre '' pra indicar que é uma fonte externa.
+
+/* Listas no Html */
+
+ul --> indica lista não ordenada
+ol --> indica lista ordenada
+
+cada item deve estar contigo dentro da tag <li></li>
+
+* Para mudar o ícone que aparece indicando a lista  utiliza a propriedade :
+liste-styele-type: disc ( padrão), square ( quadradeo) circle ( circulo) none ( nenhum).
+
+Na ol , você pode colocar o type , 1 indica númbro, A indica letra maíuscula , a indica letra minúscula , I indica algarismos romanos.
+Ainda é possível começar de outro valor que não seja 1 ou A, basta definir start e colocar o valor dentro.
+
+exemplo: <ol start="45" type="1">
+
+É possivel criar uma lista dentro de lista é so criar outra <ul> dentro da <li> existente. 
+
+
+/* Tabelas no Html*/
+
+<table border="1">
+  <tr><tr> significa atribuição de linha
+  <td></td> siginfica coluna 
+</table>
+
+* Cadas tr deve ter a mesma quantidade de td dentro para definir quantas colunas e linhas a tabela terá. 
+
+Para definir um cabeçalho na  tabela:
+ 
+declara o tr e dentro dele declara o th com a mesma quantidade de colunas que serão declaradas depois. 
+
+é importante colcoar esse cabeçalho dentro de uma tag chamada  thead assim
+
+<thead>
+ <tr> 
+    <th> Item 1</th>  determina a primeira coluna com um cabeçalho item 1
+    <th> Item 2</th>  determina a segunda coluna com  o cabeçalho de item 2 
+  </tr>
+</thead>
+
+o corpo da tabela é bom colocar dentro de uma tag <tbody></tbody>
+
+/*Criando formularios*/
+
+<form action="local onde será enviadas as informações " method " maneira como será enviada GET(url) ou POST ( interno) "></form>
+ 
+<imput type="text"  "password" "checkbox" "submit" "email" name="colocar o nome do imput"  value="colocar um valor" /> 
+<imput type="radio name="colocar o nome) O radio é para marcar , então ele não funciona com apenas um, sempre tem que ter mais de um . 
+
+
+Existem ainda outros types excluisivos do html5 são :
+ 
+* Color 
+* Date 
+* Datetime-local
+* Moht 
+* Number 
+* Range 
+* Search
+* Tel 
+* time
+* Url 
+* Week 
+
+/*Usando o Select*/
+
+<select name="o nome dele ">
+  <opition> </opition>  São as opções que o select vai mostrar 
+   O option pode ter um value ( que será enviado)
+
+   o atributo selected ( é para determinar quem aparece selecionado)
+</select>  Ele mostra as opções disponíveis. 
+
+* Para tornar o select de multimpla escolha voce deve colocar os atributos Size ( este determina quantos itens podem ser selecionados) e multiple ( determina que é de multipla escolha)
+
+<textarea name=""></textarea> coloca um espaço maior.  Eistem dois atributos nele rows (linhas) cols( coluna) mas não é indicado pois não é compatível com todos os navegadores. 
+
+<button> nome do botão </button> pode ser usado tanto dentro do formulário como fora dele . 
+
+/* Usando Label */
+
+<label for="nome"> Nome completo: </label> * se colocar o atributo for dentro você consegue focar no campo do imput( que deve ter um id) ao clicar. OU ainda colocar o imput dentro do label

@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+@keyframes exemplo{
+  0%{background-color: #FF34B3;left:100;}
+  25%{background-color:skyblue;left:500px;}
+  50%{background-color:plum; left:1000px;}
+  75%{background-color:#FFFACD;left:400px;}
+  100%{background-color:#FF6EB4;left:0px}
+}
+
+body {
+  margin: 0px;
+  background-color: #fad0dd;
+  
+}
+
+header{
+  width:400px;
+   margin-left:652px ;
+}
+
+h1 {
+  color:#ff6f9c;
+  font-size: 70px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  text-align: center;
+  text-shadow: 2px 4px 4px #4F4F4F;
+}
+
+.menu{
+  background-color:#CD6889;
+  height: 80px;
+  text-align: center;
+  
+ 
+}
+
+.principal{
+  
+  height: 580px;
+  background-color:#d8bfd8;
+  flex-direction:row;
+  
+}
+
+
+.secundaria{
+  display:flex;
+  position: absolute;
+  justify-content:center;
+  width: 500px;
+  height: 500px;
+  margin-left:400px ;
+  
+}
+
+.teste{
+ width:260px;
+ height: 230px;
+ background-color: #CD96CD ;
+ margin-top: 20px;
+ position: absolute;
+ animation-name:exemplo;
+ animation-duration:4s;
+ animation-delay: 2s;
+ animation-iteration-count:01;
+ box-shadow: 5px 5px 5px #888888;
+ text-align:center;
+ color:#551A8B;
+ font-size: 50px;
+
+}
+
+.entradas{
+  background: linear-gradient(#EED2EE,#CD6889);
+  font-size: 30px;
+  text-align: center;
+  float: right;
+  width: 300px;
+  height:600px;
+  padding-top:20px;
+}
+
+.but{
+ font-size:18px;
+
+}
+
+.contatos {
+  background-color: #ffe5ed;
+  text-align: center;
+  
+}
+
+p {
+  font-size: 30px;
+  color: #CD2990;
+  
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+/* configurações na imagem do Whatsapp\ o evento hover muda a configuração ao passar o mouse no elemento */
+
+.wtt {
+  width: 60px;
+  transition: all 1s linear;
+ 
+}
+
+.wtt:hover {
+  width: 150px;
+  
+}
+/* configurações na imagem do Linkedin \ o evento hover muda a configuração ao passar o mouse no elemento*/
+.linke {
+  width: 60px;
+  transition: all 1s linear;
+}
+
+.linke:hover {
+  width: 150px;
+}
+
+/* configurações na imagem do 
+Github\ o evento hover muda a configuração ao passar o mouse no elemento, assim como o evento visited muda a configuração caso a página já tenha sido visitada*/
+
+.gith {
+  width: 70px;
+  transition: all 1s linear;
+  
+}
+
+.gith:hover {
+  width: 190px;
+}
+
+/*Colocando responsividade no celular*/
+
+@media only screen and (max-width:380px){
+  .menu{
+  width:520px;
+  }
+
+ 
+
+ .contatos{
+  width:520px;
+  text-align: center;
+  }
+
+  /* .wtt{
+  margin-left:50px;
+  } */
+
+
+  
+/*Colocando responsividade no tablet*/ 
+
+@media only screen and (min-width:500px) and (max-width:1050px){
+            
+  .menu{
+  width:500px;
+  }
+
+  .contatos{
+  width:500px;
+  }
+
+  .wtt{
+  margin-left:80px;
+  }
+
+}
